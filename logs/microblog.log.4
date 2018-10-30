@@ -1,0 +1,115 @@
+2018-10-08 09:38:37,338 INFO: Microblog startup [in D:\digital-telecommucations\kithuatdieuche\app\__init__.py:56]
+2018-10-08 09:38:43,988 ERROR: Exception on /index [GET] [in c:\users\intern.nhkhang\appdata\local\programs\python\python37-32\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\intern.nhkhang\appdata\local\programs\python\python37-32\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\intern.nhkhang\appdata\local\programs\python\python37-32\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\intern.nhkhang\appdata\local\programs\python\python37-32\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\intern.nhkhang\appdata\local\programs\python\python37-32\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\intern.nhkhang\appdata\local\programs\python\python37-32\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\intern.nhkhang\appdata\local\programs\python\python37-32\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:\digital-telecommucations\kithuatdieuche\app\routes.py", line 46, in index
+    posts = current_user.followed_posts().paginate(
+  File "c:\users\intern.nhkhang\appdata\local\programs\python\python37-32\lib\site-packages\werkzeug\local.py", line 347, in __getattr__
+    return getattr(self._get_current_object(), name)
+AttributeError: 'AnonymousUserMixin' object has no attribute 'followed_posts'
+2018-10-08 09:40:37,754 INFO: Microblog startup [in D:\digital-telecommucations\kithuatdieuche\app\__init__.py:56]
+2018-10-08 10:00:17,604 INFO: Microblog startup [in D:\digital-telecommucations\kithuatdieuche\app\__init__.py:56]
+2018-10-08 10:00:26,946 ERROR: Exception on /explore [POST] [in c:\users\intern.nhkhang\appdata\local\programs\python\python37-32\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\intern.nhkhang\appdata\local\programs\python\python37-32\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\intern.nhkhang\appdata\local\programs\python\python37-32\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\intern.nhkhang\appdata\local\programs\python\python37-32\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\intern.nhkhang\appdata\local\programs\python\python37-32\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\intern.nhkhang\appdata\local\programs\python\python37-32\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\intern.nhkhang\appdata\local\programs\python\python37-32\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\intern.nhkhang\appdata\local\programs\python\python37-32\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "D:\digital-telecommucations\kithuatdieuche\app\routes.py", line 44, in explore
+    say = Say(body=form.say.data+1, author=current_user)
+TypeError: can only concatenate str (not "int") to str
+2018-10-08 10:00:34,229 ERROR: Exception on /explore [POST] [in c:\users\intern.nhkhang\appdata\local\programs\python\python37-32\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\intern.nhkhang\appdata\local\programs\python\python37-32\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\intern.nhkhang\appdata\local\programs\python\python37-32\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\intern.nhkhang\appdata\local\programs\python\python37-32\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\intern.nhkhang\appdata\local\programs\python\python37-32\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\intern.nhkhang\appdata\local\programs\python\python37-32\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\intern.nhkhang\appdata\local\programs\python\python37-32\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\intern.nhkhang\appdata\local\programs\python\python37-32\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "D:\digital-telecommucations\kithuatdieuche\app\routes.py", line 44, in explore
+    say = Say(body=form.say.data+1, author=current_user)
+TypeError: can only concatenate str (not "int") to str
+2018-10-08 10:09:33,443 INFO: Microblog startup [in D:\digital-telecommucations\kithuatdieuche\app\__init__.py:56]
+2018-10-08 10:09:43,467 ERROR: Exception on /upload [GET] [in c:\users\intern.nhkhang\appdata\local\programs\python\python37-32\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\intern.nhkhang\appdata\local\programs\python\python37-32\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\intern.nhkhang\appdata\local\programs\python\python37-32\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\intern.nhkhang\appdata\local\programs\python\python37-32\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\intern.nhkhang\appdata\local\programs\python\python37-32\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\intern.nhkhang\appdata\local\programs\python\python37-32\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\intern.nhkhang\appdata\local\programs\python\python37-32\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:\digital-telecommucations\kithuatdieuche\app\routes.py", line 453, in upload
+    return render_template('base.html', form=form)
+NameError: name 'form' is not defined
+2018-10-08 10:09:47,532 ERROR: Exception on /upload [GET] [in c:\users\intern.nhkhang\appdata\local\programs\python\python37-32\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\intern.nhkhang\appdata\local\programs\python\python37-32\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\intern.nhkhang\appdata\local\programs\python\python37-32\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\intern.nhkhang\appdata\local\programs\python\python37-32\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\intern.nhkhang\appdata\local\programs\python\python37-32\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\intern.nhkhang\appdata\local\programs\python\python37-32\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\intern.nhkhang\appdata\local\programs\python\python37-32\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:\digital-telecommucations\kithuatdieuche\app\routes.py", line 453, in upload
+    return render_template('base.html', form=form)
+NameError: name 'form' is not defined
+2018-10-08 10:10:42,477 INFO: Microblog startup [in D:\digital-telecommucations\kithuatdieuche\app\__init__.py:56]
+2018-10-08 10:10:50,011 ERROR: Exception on /upload [GET] [in c:\users\intern.nhkhang\appdata\local\programs\python\python37-32\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\intern.nhkhang\appdata\local\programs\python\python37-32\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\intern.nhkhang\appdata\local\programs\python\python37-32\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\intern.nhkhang\appdata\local\programs\python\python37-32\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\intern.nhkhang\appdata\local\programs\python\python37-32\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\intern.nhkhang\appdata\local\programs\python\python37-32\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\intern.nhkhang\appdata\local\programs\python\python37-32\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:\digital-telecommucations\kithuatdieuche\app\routes.py", line 453, in upload
+    return render_template('base.html', form=form)
+NameError: name 'form' is not defined
+2018-10-08 10:14:51,390 INFO: Microblog startup [in D:\digital-telecommucations\kithuatdieuche\app\__init__.py:56]
+2018-10-08 10:24:07,693 INFO: Microblog startup [in D:\digital-telecommucations\kithuatdieuche\app\__init__.py:56]

@@ -1,0 +1,68 @@
+2018-10-24 10:30:53,499 ERROR: Exception on /index [GET] [in C:\Users\intern.hpkhai\AppData\Roaming\Python\Python37\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "C:\Users\intern.hpkhai\AppData\Roaming\Python\Python37\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\intern.hpkhai\AppData\Roaming\Python\Python37\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\intern.hpkhai\AppData\Roaming\Python\Python37\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\intern.hpkhai\AppData\Roaming\Python\Python37\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\intern.hpkhai\AppData\Roaming\Python\Python37\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\intern.hpkhai\AppData\Roaming\Python\Python37\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:\digital-telecommucations\kithuatdieuche\app\routes.py", line 37, in index
+    return render_template('index.html', title='Home')
+  File "C:\Users\intern.hpkhai\AppData\Roaming\Python\Python37\site-packages\flask\templating.py", line 135, in render_template
+    context, ctx.app)
+  File "C:\Users\intern.hpkhai\AppData\Roaming\Python\Python37\site-packages\flask\templating.py", line 117, in _render
+    rv = template.render(context)
+  File "C:\Users\intern.hpkhai\AppData\Roaming\Python\Python37\site-packages\jinja2\asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "C:\Users\intern.hpkhai\AppData\Roaming\Python\Python37\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "C:\Users\intern.hpkhai\AppData\Roaming\Python\Python37\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\intern.hpkhai\AppData\Roaming\Python\Python37\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "D:\digital-telecommucations\kithuatdieuche\app\templates\index.html", line 2, in top-level template code
+    {% import 'bootstrap/wtf.html' as wtf %}
+  File "D:\digital-telecommucations\kithuatdieuche\app\templates\base.html", line 1, in top-level template code
+    {% extends 'bootstrap/base.html' %}
+  File "C:\Users\intern.hpkhai\AppData\Roaming\Python\Python37\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 1, in top-level template code
+    {% block doc -%}
+  File "C:\Users\intern.hpkhai\AppData\Roaming\Python\Python37\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 4, in block "doc"
+    {%- block html %}
+  File "C:\Users\intern.hpkhai\AppData\Roaming\Python\Python37\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block "html"
+    {% block body -%}
+  File "C:\Users\intern.hpkhai\AppData\Roaming\Python\Python37\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 21, in block "body"
+    {% block navbar %}
+  File "D:\digital-telecommucations\kithuatdieuche\app\templates\base.html", line 76, in block "navbar"
+    <li><a href="{{ url_for('uploads') }}">UploadFile</a></li>
+  File "C:\Users\intern.hpkhai\AppData\Roaming\Python\Python37\site-packages\flask\helpers.py", line 356, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "C:\Users\intern.hpkhai\AppData\Roaming\Python\Python37\site-packages\flask\app.py", line 2061, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\intern.hpkhai\AppData\Roaming\Python\Python37\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\intern.hpkhai\AppData\Roaming\Python\Python37\site-packages\flask\helpers.py", line 345, in url_for
+    force_external=external)
+  File "C:\Users\intern.hpkhai\AppData\Roaming\Python\Python37\site-packages\werkzeug\routing.py", line 1776, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'uploads'. Did you mean 'upload' instead?
+<<<<<<< HEAD
+2018-10-24 10:32:41,875 INFO: Microblog startup [in D:\digital-telecommucations\kithuatdieuche\app\__init__.py:56]
+=======
+2018-10-12 15:56:54,504 INFO: Microblog startup [in D:\digital-telecommucations\kithuatdieuche\app\__init__.py:56]
+2018-10-24 10:07:14,359 INFO: Microblog startup [in D:\digital-telecommucations\kithuatdieuche\app\__init__.py:56]
+>>>>>>> f77944e31537fe232ac0bafe632f9f1a6f38cf84
+2018-10-24 10:38:15,654 INFO: Microblog startup [in D:\digital-telecommucations\kithuatdieuche\app\__init__.py:56]
+2018-10-24 10:56:36,994 INFO: Microblog startup [in D:\digital-telecommucations\kithuatdieuche\app\__init__.py:56]
+2018-10-24 10:57:12,362 INFO: Microblog startup [in D:\digital-telecommucations\kithuatdieuche\app\__init__.py:56]
+2018-10-24 11:00:41,208 INFO: Microblog startup [in D:\digital-telecommucations\kithuatdieuche\app\__init__.py:56]
+2018-10-24 11:42:19,839 INFO: Microblog startup [in D:\digital-telecommucations\kithuatdieuche\app\__init__.py:56]
+2018-10-29 08:56:09,617 INFO: Microblog startup [in D:\digital-telecommucations\kithuatdieuche\app\__init__.py:56]
+2018-10-29 09:03:01,433 INFO: Microblog startup [in D:\digital-telecommucations\kithuatdieuche\app\__init__.py:56]
+2018-10-29 09:03:44,520 INFO: Microblog startup [in D:\digital-telecommucations\kithuatdieuche\app\__init__.py:56]
+2018-10-29 09:20:13,896 INFO: Microblog startup [in D:\digital-telecommucations\kithuatdieuche\app\__init__.py:56]
